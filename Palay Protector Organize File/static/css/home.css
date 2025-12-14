@@ -1,0 +1,100 @@
+/* static/css/home.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 2rem 0 2.5rem;
+    position: relative;
+}
+
+.feature-card-modern {
+    background: linear-gradient(135deg, #A8E6A1 0%, #8FD987 100%);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(46, 125, 50, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.feature-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(46, 125, 50, 0.25);
+}
+
+/* ADD THESE STYLES FOR FULL-WIDTH BUTTONS */
+.feature-card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature-icon-wrapper {
+    width: 85px;
+    height: 85px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-wrapper img {
+    width: 55px;
+    height: 55px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #2d5016;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.feature-button-container {
+    margin-top: auto;
+    width: 100%;
+}
+
+.feature-button-full {
+    width: 100%;
+    background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+.feature-button-full:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4);
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+}

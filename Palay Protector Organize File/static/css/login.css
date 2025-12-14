@@ -1,0 +1,81 @@
+/* ======== CLEAN TRANSPARENT LOGIN ======== */
+.login-container {
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 20px; /* Bawas spacing sa taas */
+    padding: 0px;
+}
+
+/* Title */
+.otp-title { 
+    text-align: center; 
+    color: #2e7d32;
+    font-size: 30px; 
+    font-weight: 800; 
+    margin-bottom: 5px; 
+}
+
+.otp-subtitle { 
+    text-align: center; 
+    color: #4b4b4b; 
+    font-size: 14px; 
+    margin-bottom: 25px; 
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    border-radius: 10px !important;
+    padding: 12px !important;
+    border: 1px solid #ccc !important;
+    background: #ffffff !important;
+    font-size: 15px !important;
+}
+
+/* Forgot Password Right-Aligned */
+.forgot-wrapper {
+    text-align: right;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.forgot-btn {
+    color: #2e7d32;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgot-btn:hover {
+    opacity: 0.7;
+}
+
+/* Buttons */
+.stButton>button {
+    border-radius: 10px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* SPECIFIC styling only for Forgot Password button */
+button#forgot_pass_btn {
+    background: none !important;
+    color: #2e7d32 !important;
+    border: none !important;
+    text-decoration: underline !important;
+
+    padding: 4px 14px !important;   /* mas maluwag */
+    min-width: 150px !important;    /* mas mahaba */
+    font-size: 14px !important;
+
+    float: right !important;
+    margin-top: -6px !important;
+    margin-bottom: 12px !important;
+}
+/* Make Forgot Password button WIDER ONLY */
+button#forgot_pass_btn {
+    width: 190px !important;     /* ⬅ ADJUST WIDTH HERE */
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+}

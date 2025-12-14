@@ -1,0 +1,61 @@
+/* static/css/styles.css */
+/* ✅ LIGHTER SOFT GREEN BACKGROUND */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(
+        135deg,
+        #cfe8d6 0%,   /* very light sage */
+        #dff2e5 50%,  /* soft mint center */
+        #c8e1d0 100%  /* balanced light edge */
+    ) !important;
+    padding: 0.5rem !important;
+    overflow-x: hidden !important;
+}
+
+/* Keep content readable */
+.main {
+    background: transparent !important;
+}
+
+/* Login container contrast para hindi lumubog sa green */
+.login-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs styling */
+.stTextInput input {
+    background: #f3faf4 !important;
+    border: 1px solid #c7dec9 !important;
+    border-radius: 10px !important;
+}
+
+/* Buttons, Inputs, and Layout */
+.stButton button, .stFileUploader, .stTextInput input {
+    width: 100% !important;
+}
+.stImage img { display: block; margin: auto; }
+.stMarkdown, .stButton { text-align: center !important; }
+
+/* Green button styling */
+.stButton>button {
+    background-color: #2e7d32 !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 0 !important;
+    transition: all 0.3s ease !important;
+}
+.stButton>button:hover {
+    background-color: #256528 !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .block-container { padding: 0.5rem !important; }
+    .stButton button { display: block !important; margin: 0.3rem auto !important; }
+}

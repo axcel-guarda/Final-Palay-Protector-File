@@ -1,0 +1,438 @@
+/* static/css/detect.css - WITH SEVERITY COLOR CODING */
+
+.upload-section {
+    background-color: #f8f9fa; 
+    border: 2px dashed #4CAF50; 
+    border-radius: 15px;
+    padding: 30px; 
+    text-align: center; 
+    margin: 20px 0;
+}
+
+.upload-text { 
+    color: #2e7d32; 
+    font-size: 18px; 
+    font-weight: 600; 
+}
+
+.upload-subtext { 
+    color: #6c757d; 
+    font-size: 14px; 
+    margin-bottom: 20px; 
+}
+
+.preview-image {
+    border-radius: 12px; 
+    border: 3px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* PRIMARY BUTTON - GREEN */
+.detect-button-primary {
+    width: 100% !important;
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 16px 28px !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    margin: 10px 0 !important;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4) !important;
+    letter-spacing: 0.5px;
+}
+
+.detect-button-primary:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.5) !important;
+    background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%) !important;
+}
+
+/* SECONDARY BUTTON - GREEN OUTLINE */
+.detect-button-secondary {
+    width: 100% !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%) !important;
+    color: #2E7D32 !important;
+    border: 3px solid #4CAF50 !important;
+    border-radius: 12px !important;
+    padding: 14px 24px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    margin: 8px 0 !important;
+    box-shadow: 0 3px 10px rgba(76, 175, 80, 0.2) !important;
+}
+
+.detect-button-secondary:hover {
+    background: linear-gradient(135deg, #e8f5e9 0%, #dcedc8 100%) !important;
+    color: #1B5E20 !important;
+    border-color: #2E7D32 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3) !important;
+}
+
+/* CLEAR BUTTON - GREEN SOLID */
+.detect-button-clear {
+    width: 100% !important;
+    background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px 24px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    margin: 8px 0 !important;
+    box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3) !important;
+}
+
+.detect-button-clear:hover {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* LANGUAGE BUTTONS - GREEN */
+.language-section {
+    background: linear-gradient(135deg, #f1f8e9 0%, #e8f5e9 100%);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #4CAF50;
+}
+
+.language-title {
+    color: #2E7D32;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.language-buttons-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.language-button {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3) !important;
+    min-width: 120px;
+}
+
+.language-button:hover {
+    background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4) !important;
+}
+
+.language-button.active {
+    background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%) !important;
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.5) !important;
+    transform: translateY(-1px);
+}
+
+/* VIEW BUTTONS - GREEN */
+.view-button {
+    background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3) !important;
+    margin: 5px;
+    min-width: 100px;
+}
+
+.view-button:hover {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 12px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* RESULT CARD - IMPROVED LAYOUT */
+.result-container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid #e8f5e9;
+}
+
+.result-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e8f5e9;
+}
+
+.result-title {
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.disease-name {
+    color: #b71c1c;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.confidence-score {
+    color: #2e7d32;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.confidence-label {
+    color: #6c757d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* SEVERITY COLOR SYSTEM - ADDED FOR COLOR CODING */
+.severity-high {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    border-color: #dc2626 !important;
+}
+
+.severity-moderate {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+    border-color: #d97706 !important;
+}
+
+.severity-low {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%) !important;
+    border-color: #16a34a !important;
+}
+
+/* UPDATED SEVERITY SECTION - Now with color coding */
+.severity-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
+
+.severity-section.high {
+    background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+    border-color: #dc2626;
+}
+
+.severity-section.moderate {
+    background: linear-gradient(135deg, #fffbeb 0%, #fed7aa 100%);
+    border-color: #d97706;
+}
+
+.severity-section.low {
+    background: linear-gradient(135deg, #f0fdf4 0%, #bbf7d0 100%);
+    border-color: #16a34a;
+}
+
+.severity-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.severity-section.high .severity-label {
+    color: #7f1d1d;
+}
+
+.severity-section.moderate .severity-label {
+    color: #78350f;
+}
+
+.severity-section.low .severity-label {
+    color: #14532d;
+}
+
+.severity-badge {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* DISEASE INFO SECTION IN WHITE CARD WITH GREEN LINE */
+.disease-info-section {
+    margin: 25px 0;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.disease-info-title {
+    color: #2E7D32;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.disease-description {
+    color: #424242;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* LANGUAGE VIEW SECTION IN WHITE CARD */
+.language-view-section {
+    text-align: center;
+    margin: 25px 0;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.language-view-title {
+    color: #2E7D32;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ACTION BUTTONS CONTAINER */
+.action-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.action-button {
+    flex: 1;
+    min-width: 120px;
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3) !important;
+    text-align: center;
+}
+
+.action-button:hover {
+    background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* CONFIDENCE BAR */
+.confidence-bar-container {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.confidence-bar {
+    height: 12px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.confidence-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #81C784, #4CAF50, #2E7D32);
+    border-radius: 10px;
+    transition: width 0.8s ease;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .result-container {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .result-title {
+        font-size: 24px;
+    }
+    
+    .disease-name {
+        font-size: 20px;
+    }
+    
+    .confidence-score {
+        font-size: 28px;
+    }
+    
+    .language-buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .language-button {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .action-buttons-container {
+        flex-direction: column;
+    }
+    
+    .action-button {
+        width: 100%;
+    }
+}
+
+/* FIX FOR TEXT OVERFLOW */
+.text-wrap-fix {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* SUCCESS MESSAGES */
+.success-message {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    color: #2E7D32;
+    font-weight: 600;
+}
