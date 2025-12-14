@@ -15,9 +15,7 @@ def show_detect():
     if 'result_lang' not in st.session_state:
         st.session_state.result_lang = "english"
 
-    # Load CSS
-    with open("static/css/detect.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+   
 
     # Page UI - ALL GREEN BUTTONS
     st.markdown("""
@@ -291,4 +289,5 @@ def show_detect():
         st.markdown("</div>", unsafe_allow_html=True)
 
     # Bottom Navigation
+
     show_bottom_nav('detect')
