@@ -8,11 +8,7 @@ from components.header import show_header
 def show_login():
     show_header()
 
-    # Load CSS
-    with open("static/css/login.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    st.markdown('<div class="login-container">', unsafe_allow_html=True)
 
     
 
@@ -71,3 +67,4 @@ def show_login():
         st.rerun()
 
     st.markdown("</div>", unsafe_allow_html=True)
+
